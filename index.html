@@ -6,23 +6,91 @@
     <title>lol3d</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
             align-items: center;
             background-color: black;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
         }
-        
+
+        container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
+
         .word {
             color: white;
-            font-size: 48px;
             font-family: Courier, monospace;
+            font-size: 48px;
+            height: 100px;
+            text-align: center;
+            width: 100%
+        }
+
+        table {
+            border-collapse: collapse;
+            color: white;
+            font-family: Courier, monospace;
+            font-size: 24px;
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        table tr td {
+            border: 1px solid white;
+            margin: 0px;
         }
     </style>
 </head>
 <body>
-    <div class="word">lol3d.com</div>
+    <div class="container">
+        <div class="word">lol3d.com</div>
+        <table>
+            <tr>
+                <td>OpenGL</td>
+                <td>right-handed</td>
+                <td>y-up</td>
+            </tr>
+            <tr>
+                <td>DirectX</td>
+                <td>left-handed</td>
+                <td>y-up</td>
+            </tr>
+            <tr>
+                <td>Vulcan</td>
+                <td>right-handed</td>
+                <td>y-down</td>
+            </tr>
+            <tr>
+                <td>Blender</td>
+                <td>right-handed</td>
+                <td>z-up</td>
+            </tr>
+            <tr>
+                <td>LightWave</td>
+                <td>left-handed</td>
+                <td>y-up</td>
+            </tr>
+            <tr>
+                <td>Unity</td>
+                <td>left-handed</td>
+                <td>y-up</td>
+            </tr>
+            <tr>
+                <td>Unreal Engine</td>
+                <td>left-handed</td>
+                <td>z-up</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
