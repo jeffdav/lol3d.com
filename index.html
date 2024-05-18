@@ -36,10 +36,42 @@
             color: white;
             font-family: Courier, monospace;
             font-size: 24px;
-            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        td {
+        @media only screen and (max-width: 767px) {
+            table {
+                width: 100%;
+            }
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            table {
+                width: 80%;
+            }
+            img {
+                max-width: 240px;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            table {
+                width: 60%;
+            }
+            img {
+                max-width: 240px;
+                height: auto;
+            }
+        }
+
+        table td {
+            max-height: 10px;
             padding: 10px;
             text-align: center;
             vertical-align: middle;
@@ -47,13 +79,7 @@
 
         table tr td {
             border: 1px solid white;
-            font-size: 4vw;
             margin: 0px;
-        }
-
-        img {
-            height: auto;
-            max-width: 100%;
         }
 
         .invert {
